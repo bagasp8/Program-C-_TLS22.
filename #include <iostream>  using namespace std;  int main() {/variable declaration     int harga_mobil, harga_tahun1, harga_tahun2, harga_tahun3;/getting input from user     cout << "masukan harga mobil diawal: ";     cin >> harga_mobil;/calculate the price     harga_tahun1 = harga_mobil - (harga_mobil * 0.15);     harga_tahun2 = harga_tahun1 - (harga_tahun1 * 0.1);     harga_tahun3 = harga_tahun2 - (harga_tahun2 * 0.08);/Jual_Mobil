@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // variable declaration
+    int harga_mobil, harga_tahun1, harga_tahun2, harga_tahun3;
+    
+    // getting input from user
+    cout << "masukan harga mobil diawal: ";
+    cin >> harga_mobil;
+    
+    // calculate the price
+    harga_tahun1 = harga_mobil - (harga_mobil * 0.15);
+    harga_tahun2 = harga_tahun1 - (harga_tahun1 * 0.1);
+    harga_tahun3 = harga_tahun2 - (harga_tahun2 * 0.08);
+    
+    // print the output
+    cout << "harga jual mobil setelah 1 tahun adalah Rp " << harga_tahun1 << endl;
+    cout << "harga jual mobil setelah 2 tahun adalah Rp " << harga_tahun2 << endl;
+    cout << "harga jual mobil setelah 3 tahun adalah Rp " << harga_tahun3 << endl;
+
+    return 0;
+}
